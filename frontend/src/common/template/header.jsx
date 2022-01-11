@@ -12,7 +12,7 @@ export default props => (
             </span>
         </a>
         <nav className="navbar navbar-static-top">
-            <a href="" className='sidebar-toggle' data-toggle='offcanvas'></a>
+            <a href="/" className='sidebar-toggle' data-toggle='offcanvas'></a>
         </nav>
     </header>
 )
