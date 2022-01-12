@@ -5,14 +5,15 @@ module.exports = (req, res, next) => {
 
     const parseErros = (nodeRestfulErrors) => {
         const errors = []
-        _.forIn(nodeRestfulErrors, error => errors.push(error.menssage))
+        _.forIn(nodeRestfulErrors, error => errors.push(error.message))
         return errors
     }
 
     if (bundle.errors) {
         const errors = parseErros(bundle.errors)
         res.status(500).json({ errors })
-    } else{
+    } else {
         next()
     }
+
 }
